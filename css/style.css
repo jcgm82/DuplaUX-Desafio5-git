@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,900;1,100;1,400;1,600;1,900&display=swap');
+
+/*Paleta de color*/
+/*morado #380036*/
+/*azul #0CBABA*/
+/*negro #0d0d0d*/
+/*gris oscuro #242426*/
+/*gris claro #E4EAEC*/
+/*azul #285975*/
+
+
+*{
+	padding: 0;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+h1, h2{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	font-weight: 600;
+	padding: 8px 0px;
+
+}
+
+body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 80vh auto auto;
+	grid-template-areas:
+	"nav"
+	"banner"
+	"main"
+	"pie";
+}
+
+nav, main, footer{
+	padding: 10px 10px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	margin: 0px 0px;
+}
+
+/*---------------global end----------------*/
+
+
+
+/*---------------nav starts-----------------*/
+
+nav{
+	background-color: #E4EAEC;
+	color: #242426;
+	grid-area: nav;
+}
+
+nav div img{
+
+	height: 80px;
+	width: auto;
+}
+
+
+
+
+/*---------------menu start-----------------*/
+
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li{
+	margin: 0px 0px;
+	padding: 0px 4px 0px 4px;
+}
+
+
+nav	ul li a{
+	color: #242426;
+	text-decoration: none;
+}
+
+nav	ul li a:hover{
+	color: #0CBABA;
+	text-decoration: none;
+}
+
+/*----------------menu ends------------------*/
+
+/*-----------------nav ends------------------*/
+
+
+
+/*--------------header starts----------------*/
+
+header{
+	background-image: linear-gradient(45deg, #380036, #0CBABA);
+	color: white;
+	font-weight: 400;
+	grid-area: banner;
+
+}
+
+.texto-banner{
+	position: absolute;
+	bottom: 15%;
+	left: 0px;
+	padding: 0px 10px 0px 0px;
+}
+
+.banner__texto--detalles{
+	color: #E4EAEC;
+	padding-left: 20px;
+}
+
+
+#button-form{
+	background-color: #0CBABA;
+	color: whitesmoke;
+	padding: 12px 24px;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 25px;
+	border-style: none;
+
+}
+
+/*---------------header ends-----------------*/
+
+
+/*---------------main starts-----------------*/
+
+/*              descripcion                  */
+
+main{
+	background-color: white;
+	grid-area: main;
+	color: #242426;
+	text-align: justify;
+	margin: 0px 10px;
+ }
+
+.espacio{
+	margin: 20px 10px;
+}
+
+/*             cajas de servicios             */
+
+#bloques-servicios{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between left center;
+margin: 0px 20px;
+}
+
+main section #branding, #uxdesign, #writing, #seo, #comman, #webdev, #translate, #copy{
+	background-color: #E4EAEC;
+	width: 330px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 40px;
+	border-radius: 25px;
+	box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#bloques-servicios div h3, p{
+	padding-bottom: 20px;
+
+}
+
+#bloques-servicios div button{
+	background-color: #0CBABA;
+	border: none;
+	color: whitesmoke;
+	font-size: 16px;
+	font-weight:800;
+	padding: 12px 32px 12px 32px;
+	justify-self: right;
+	float: right;
+	border-radius: 10px;
+}
+
+/*                clientes                   */
+
+main section #clientes h2{
+	text-align: center;
+}
+
+.clientes{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between center;
+}
+
+	#clientes{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 50px 40px;
+	padding: 0px 40px;
+	align-items: center;
+	}
+
+/*------------------form starts---------------------*/
+
+
+form div{
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	margin: 50px 10px;
+	padding: 20px 10px;
+}
+
+form div label{
+	background-color: none;
+	border-style: none;
+	padding: 16px 4px;
+	margin: 10px 4px;
+}
+
+form div select, textarea, input{
+	background-color: white;
+	border-style: none;
+	border-color: dimgray;
+	padding: 12px 4px;
+	margin: 4px 12px 4px 12
+	px;
+}
+
+form div div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+form div .button-form{
+	background-color: #0CBABA;
+	border: none;
+	color: whitesmoke;
+	font-size: 16px;
+	font-weight:600;
+	padding: 12px 0px;
+	border-radius: 20px;
+	width: 40%;
+	text-align: center;
+	
+}
+
+form div ul li{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+form div ul li input{
+	margin-right: 5px;
+}
+
+/*----------------ends form------------------*/
+
+
+/*----------------main ends------------------*/
+
+footer{
+	background-color: #E4EAEC;
+	grid-area: pie;
+
+}
+
+footer h3{
+	margin: 10px 0px;
+	color: #0CBABA;
+}
+
+footer div a{
+	display: inline-block;
+	margin: 20px 10px;
+}
+
+footer #logo img{
+	width: auto;
+	height: 70px;
+}
+
+footer ul li{
+	margin: 12px 0px;
+}
+
+footer ul li a{
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	
+}
+
+.pie{
+	margin: 10px 0px;
+	text-align: center;
+	color: black;
+}
+
+
+
+@media only screen and (min-width: 768px){
+	body{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 16vh 80vh auto auto;
+		grid-template-areas:
+		"nav nav nav"
+		"banner banner banner"
+		"main main main"
+		"pie pie pie";
+	}
+
+
+
+main #bloques-servicios{
+width: 100%;
+margin: 0px 8%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+main section #branding, #uxdesign, #writing, #seo, #comman, #webdev, #translate, #copy{
+	background-color: #E4EAEC;
+	width: 300px;
+	margin top: 30px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 40px;
+	border-radius: 25px;
+	box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#bloques-servicios div h3, p{
+	padding-bottom: 20px;
+
+}
+
+#bloques-servicios div button{
+	background-color: #0CBABA;
+	border: none;
+	color: whitesmoke;
+	font-size: 16px;
+	font-weight:800;
+	padding: 12px 32px 12px 32px;
+	justify-self: right;
+	float: right;
+	border-radius: 10px;
+}
+
+	form div div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+
+}
+
+@media only screen and (min-width: 1024px){
+	body{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 10vh 80vh auto auto;
+		grid-template-areas:
+		"nav nav nav nav"
+		"banner banner banner banner"
+		"main main main main"
+		"pie pie pie pie";
+	}
+
+/*-----------------nav 1024---------------------*/
+
+nav{
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0px 0px;
+}
+
+.nav-position{
+	justify-content: space-around;
+	position: sticky;
+ 	top: 0;
+  	width: 100%;
+
+}
+
+nav img{
+	margin-left: 50px;
+}
+
+nav a{
+	padding: 0px 10px;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+	margin: 0px 50px 0px 50px;
+}
+
+nav ul li{
+	margin-right: 50px;
+	padding: 30px 0px 0px 0px;
+
+}
+
+
+nav	ul li a{
+	color: #242426;
+	text-decoration: none;
+}
+
+nav	ul li a:hover{
+	color: #0CBABA;
+	text-decoration: none;
+}
+
+
+/*             cajas de servicios 1024             */
+
+.espacio{
+	margin: 20px 60px;
+}
+
+main #bloques-servicios{
+width: 100%;
+margin: 0px 8%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+main section #branding, #uxdesign, #writing, #seo, #comman, #webdev, #translate, #copy{
+	background-color: #E4EAEC;
+	width: 340px;
+	margin top: 30px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 40px;
+	border-radius: 25px;
+	box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#bloques-servicios div h3, p{
+	padding-bottom: 20px;
+
+}
+
+#bloques-servicios div button{
+	background-color: #0CBABA;
+	border: none;
+	color: whitesmoke;
+	font-size: 16px;
+	font-weight:800;
+	padding: 12px 32px 12px 32px;
+	justify-self: right;
+	float: right;
+	border-radius: 10px;
+}
+
+
+
+/*----------------banner 1024-----------------*/
+
+.texto-banner{
+	position: absolute;
+	bottom: 15%;
+	left: 0px;
+	padding: 0px 10px 0px 0px;
+	margin-left: 60px;
+}
+
+.banner__texto--detalles{
+	color: #E4EAEC;
+	padding-left: 20px;
+}
+
+
+#button-form{
+	background-color: #0CBABA;
+	color: whitesmoke;
+	padding: 12px 24px;
+	margin-top: 20px;
+	border-radius: 25px;
+	border-style: none;
+
+}
+
+/*------------------main 1024------------------*/
+
+form div{
+	margin: 0px 20%;
+}
+
+}
+
+
+/*-----------------------------------------------------*/
+/*----------------------nosotros-----------------------*/
+/*-----------------------------------------------------*/
+
+body .nosotros {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 80vh auto auto;
+	grid-template-areas:
+	"nav"
+	"banner"
+	"main"
+	"pie";
+}
+
+.texto-banner{
+	position: absolute;
+	bottom: 15%;
+	left: 0px;
+	padding: 0px 10px 0px 0px;
+}
+
+.banner__texto--detalles{
+	color: #E4EAEC;
+	padding-left: 20px;
+}
+
+
+#button-form{
+	background-color: #0CBABA;
+	color: whitesmoke;
+	padding: 12px 24px;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 25px;
+	border-style: none;
+
+}
+
+#hmv{
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	justify-content: space-around;
+	margin: 10px 10px;
+	text-align: justify;
+}
+
+.hmv{
+	display: flex;
+	flex-direction: column;
+}
+
+.nosotros main section div img{
+	width: 100%;
+	height: auto;
+	margin: 10px 0px 20px 0px;
+}
+
+.nosotros footer{
+	background-color: #E4EAEC;
+	grid-area: pie;
+
+}
+
+.nosotros footer h3{
+	margin: 10px 0px;
+	color: #0CBABA;
+}
+
+.nosotros footer div a{
+	display: inline-block;
+	margin: 20px 10px;
+}
+
+.nosotros footer #logo img{
+	width: auto;
+	height: 70px;
+}
+
+.nosotros footer ul li{
+	margin: 12px 0px;
+}
+
+.nosotros footer ul li a{
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	
+}
+
+.nosotros .pie{
+	margin: 10px 0px;
+	text-align: center;
+	color: black;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+	body .nosotros{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 16vh 80vh auto auto;
+		grid-template-areas:
+		"nav nav nav"
+		"banner banner banner"
+		"main main main"
+		"pie pie pie";
+	
+	}
+
+
+.nosotros main section div img{
+	width: 50%;
+	height: auto;
+	margin: 10px 0px 20px 0px;
+}
+
+}
+
+@media only screen and (min-width: 1024px){
+	body .nosotros{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 10vh 80vh auto auto;
+		grid-template-areas:
+		"nav nav nav nav"
+		"banner banner banner banner"
+		"main main main main"
+		"pie pie pie pie";
+	}
+
+.hmv .bloque-nosotros{
+	margin: 10px 20%;
+}
+
+
+.nosotros main section div img{
+	width: 50%;
+	height: auto;
+	margin: 10px 0px 20px 0px;
+}
+
+form{
+	margin-top: 30px;
+	}
+
+}
